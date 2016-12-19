@@ -1,6 +1,4 @@
-import sys
-sys.path.append("..");
-from arm import Arm;
+from py7bot.arm import Arm;
 
 if __name__=="__main__":
     arm = Arm();

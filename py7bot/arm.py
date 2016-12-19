@@ -1,5 +1,5 @@
 import serial
-import config
+import py7bot.config as config
 import warnings
 import numpy as np
 from threading import Thread,Lock

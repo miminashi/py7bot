@@ -13,7 +13,7 @@ On my computer, it is /dev/cu.usbmodem1411.
 simple test:
 -----------
 ```python
->> from arm import Arm;
+>> from py7bot.arm import Arm;
 >> arm = Arm();
 >> angles = {1:95,2:65}
 >> arm.setAngle(angles)
