@@ -10,6 +10,12 @@ python3 -m serial.tools.list_ports
 
 On my computer, it is /dev/cu.usbmodem1411.
 
+INSTALL:
+-----------
+```bash
+pip install git+https://github.com/miminashi/py7bot.git
+```
+
 simple test:
 -----------
 ```python
