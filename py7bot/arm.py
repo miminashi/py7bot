@@ -50,7 +50,7 @@ class Arm:
         self.thread_done = True
         self.t_read.join()
         self.port.close()
-    
+
     def _do(self, command):
         self.port.write(command)
         self.port.flush()
@@ -115,7 +115,7 @@ class Arm:
         for servo,sp in servo_speed.items():
             self.speed[servo] = sp;
         self._doFluentSpeed();
-    
+
     def setFluent(self,servo_fluent): #set servo fluent or not, true or false
         for servo,fl in servo_fluent.items():
             self.fluent[servo] = fl;
@@ -127,7 +127,7 @@ class Arm:
         for servo,fl in servo_fluent.items():
             self.fluent[servo] = fl;
         self._doFluentSpeed();
-    
+
     def setAngle(self,servo_angle): #set servo angles
         if self.status != 1:
             print("can't set angle, not in the correct mode")
