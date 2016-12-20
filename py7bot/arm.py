@@ -137,5 +137,8 @@ class Arm:
         ##shoudn't we limit the range of the angels here!!
         self._doAngle();
 
-    def rangle(self): #get the read angle
+    def getAngle(self): #get the read angle
         return [x+y for x,y in zip(self._pos, self._offset)];
+
+    def getCommandedAngle(self):  # get the written angle
+        return [a for a in self.angle]
